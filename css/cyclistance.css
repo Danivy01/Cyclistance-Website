@@ -52,7 +52,7 @@ header, nav, section, article, aside, footer, hgroup {
 }
 
 html, body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-weight: 400;
   background-color: #fff;
   font-size: 16px;
@@ -88,7 +88,7 @@ global styles
 html,
 body {
   background: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
 }
 
 ::selection {
@@ -202,12 +202,7 @@ button.main-button:hover {
   text-align: center;
 }
 
-
-/* 
----------------------------------------------
-header
---------------------------------------------- 
-*/
+/* Navbar */
 
 .logo {
   color: #191a20;
@@ -275,6 +270,162 @@ header
   color: #7a7a7a;
   letter-spacing: 1px;
   gap: 20px;
-  padding-left: 30px;
+  padding-left: 30px; 
+}
+
+.home {
+  height: 100vh;
+  min-height: 793px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-top: 20px;
+  background-image: url(../images/Homepage\ Picture.png);
+}
+
+
+.home .home-text .left-text {
+  position: relative;
+  align-self: center;
+  margin-top: 25%;
+  transform: perspective(1px) translateY(-30%) !important;
+}
+
+.home .home-text h1 {
+  letter-spacing: 1px;
+  width: 746px;
+  height: 197px;
+  flex-shrink: 0;
+  color: var(--black, #1E1E1E);
+  font-family: Poppins;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 0%;
+}
+
+.home .home-text p {
+  font-size: 17px;
+  position: relative;
+  width: 746px;
+  height: 80px;
+  flex-shrink: 0;
+  color: var(--black, #1E1E1E);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+.home a img{
+  width: 200px;
+  height: 60px;
+  margin-top: 30px;
+}
+
+.textFit {
+  font-size: 4vw!important;
+}
+
+@media (max-width: 1080px) {
+  .textFit {
+    font-size: 5.7vw!important;
+  }
+
+  .pFit {
+    width: auto!important;
+    height: auto!important;
+  }
+}
+
+@media (max-width: 520px) {
+  .textFit {
+    font-size: 7.7vw!important;
+    height: 127px!important;
+  }
+}
+
+@media (max-width: 1420px) {
+  .home .home-text {
+    width: 70%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 1320px) {
+  .home .home-text .left-text {
+    margin-top: 50%;
+  }
+  .home .home-text {
+    width: 50%;
+    margin-left: 5%;
+  }
+
+  .navbar-light .navbar-collapse {
+    margin-top: 15px;
+    border-top: 1px solid #DDDDDD;
+}
+
+  .navbar-light .navbar-nav .nav-link::before {
+    top: -5px;
+    border: 5px solid;
+    border-color: #fff transparent transparent transparent;
+  }
+}
+
+@media (max-width: 1140px) {
+  .home {
+    height: auto;
+  }
+  .home .home-text {       
+    width: 92%;
+    padding-top: 793px;
+  }
+  .home .home-text .left-text {
+    margin-top: 5%;
+    transform: none !important;
+  }
+
+  .sticky-top.navbar-light {
+    position: fixed;
+    background: #FFFFFF;
+}
+
+  .navbar-light .navbar-collapse {
+    margin-top: 15px;
+    border-top: 1px solid #FFFFFF;
+}
+
+  .navbar-light .navbar-nav .nav-link::before {
+    top: -5px;
+    border: 5px solid;
+    border-color: #FFFFFF transparent transparent transparent;
+  }
+}
+@media (max-width: 810px) {
+  .home {
+    background-size: contain;
+  }
+
+  .home .home-text {
+    padding-top: 100%;
+    margin-left: 0;
+  }
+    
+  .container-fluid .col-md-12 {
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+
+  .navbar-light .navbar-collapse {
+    margin-top: 15px;
+    border-top: 1px solid #DDDDDD;
+}
   
+    .navbar-light .navbar-nav .nav-link::before {
+      top: -5px;
+      border: 5px solid;
+      border-color: #fff transparent transparent transparent;
+    }
 }
