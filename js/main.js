@@ -1,6 +1,8 @@
 (function ($) {
   "use strict";
 
+  new WOW().init();
+
 // Initialize the image, text, and subtitle arrays
 let designArr = [
   {
@@ -21,8 +23,6 @@ let designArr = [
 let changeImage = $("#changeImage");
 let changeTitle = $("#changeTitle");
 let changeSubtitle = $("#changeSubtitle");
-
-new WOW().init();
   
 // Sticky Navbar
 $(function () {
