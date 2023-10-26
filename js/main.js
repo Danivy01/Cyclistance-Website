@@ -118,4 +118,44 @@ $(document).ready(function () {
   });
 });
 
+document.getElementById('form').addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent the default form submission behavior.
+
+  var firstName = document.getElementById("firstName").value;
+  var lastName = document.getElementById("lastName").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+
+  if (!validateName(firstName) || !validateName(lastName)) {
+    alert("Please enter a valid first name and last name (at least 2 characters each).");
+  } else if (!email || !validateEmail(email)) {
+    alert("Please enter a valid email address.");
+  } else if (!message) {
+    alert("Please enter a message.");
+  } else {
+    var params = {
+      firstName: firstName,
+      lastName: lastName,
+      email: email,
+      message: message
+    }
+
+    emailjs.send('service_5r4k2wr', 'template_nzol3q8', params)
+      .then(function (res) {
+        alert("Sent! " + res.status);
+        document.getElementById("form").reset();
+      });
+  }
+});
+
+function validateName(name) {
+  var namePattern = /^[A-Za-z]{2,}$/; // At least 2 alphabetical characters
+  return namePattern.test(name);
+}
+
+function validateEmail(email) {
+  var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+}
+
 })(jQuery);
