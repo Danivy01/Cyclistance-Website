@@ -283,7 +283,6 @@ button.main-button:hover {
   background-image: url(../images/Homepage\ Picture.png);
 }
 
-
 .home .home-text .left-text {
   position: relative;
   align-self: center;
@@ -333,12 +332,18 @@ button.main-button:hover {
   .left-text {
     bottom: -3rem;
   }
+
+  .textFit {
+    font-size: 5.7vw!important;
+    bottom: -7rem;
+  }
 }
 
 @media (max-width: 1080px) {
   .textFit {
     font-size: 5.7vw!important;
     height: auto!important;
+    bottom: -7rem;
   }
 
   .pFit {
@@ -349,11 +354,12 @@ button.main-button:hover {
 
 @media (max-width: 1000px) {
   .left-text {
-    bottom: 1rem;
+    bottom: -1rem;
   }
 
   .textFit {
     font-size: 3.5vw!important;
+    bottom: -5rem;
   }
 }
 
@@ -366,6 +372,7 @@ button.main-button:hover {
 @media (max-width: 520px) {
   .textFit {
     font-size: 5.7vw!important;
+    bottom: -7rem;
   }
 
   .about {
@@ -379,6 +386,11 @@ button.main-button:hover {
     width: 70%;
     margin-left: 5%;
   }
+
+  .textFit {
+    font-size: 5.7vw!important;
+    bottom: -7rem;
+}
 }
 
 @media (max-width: 1320px) {
@@ -399,6 +411,11 @@ button.main-button:hover {
     top: -5px;
     border: 5px solid;
     border-color: #fff transparent transparent transparent;
+  }
+
+  .textFit {
+    font-size: 5.7vw!important;
+    bottom: -7rem;
   }
 }
 
@@ -432,6 +449,11 @@ button.main-button:hover {
     border: 5px solid;
     border-color: #FFFFFF transparent transparent transparent;
   }
+
+  .textFit {
+    font-size: 5.7vw!important;
+    bottom: -7rem;
+  }
 }
 @media (max-width: 810px) {
   .home {
@@ -458,6 +480,11 @@ button.main-button:hover {
       border: 5px solid;
       border-color: #fff transparent transparent transparent;
     }
+
+    .textFit {
+      font-size: 5.7vw!important;
+      bottom: -7rem;
+    }
 }
 
 @media (max-width: 660px){
@@ -469,6 +496,10 @@ button.main-button:hover {
   .features-content {
     position: relative;
     bottom: -5rem;
+  }
+  .textFit {
+    font-size: 5.7vw!important;
+    bottom: -7rem;
   }
 }
 
