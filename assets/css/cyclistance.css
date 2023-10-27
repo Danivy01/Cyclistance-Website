@@ -202,13 +202,7 @@ button.main-button:hover {
   text-align: center;
 }
 
-
-/* 
----------------------------------------------
-header
---------------------------------------------- 
-*/
-
+/* Navbar */
 .logo {
   color: #191a20;
   font-size: 28px;
@@ -286,7 +280,7 @@ header
   background-repeat: no-repeat;
   background-position: right;
   margin-top: 20px;
-  background-image: url(../images/Home\ Picture.png);
+  background-image: url(../images/Homepage\ Picture.png);
 }
 
 
@@ -478,6 +472,7 @@ header
   }
 }
 
+/* App Features */
 .features-content {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -575,17 +570,20 @@ header
   }
 }
 
-/* .feature-item .caption {
-  color:#1E1E1E;
-  font-size: 40px;
-  font-weight: 700;
-  font-family: Poppins;
-  position: absolute;
-  width: 100%;
-  right: 20px;
-  top: 5%;
-} */
+.feature-image{
+  width: 200px;
+  height: 200px;
+}
 
+.feature-text title{
+  font-size: 20px;
+  font-weight: 500;
+  color: #1e1e1e;
+  margin-top: 20px;
+  font-family: Poppins;
+}
+
+/* About */
 .about {
   background-color: #f8f8f8;
   align-self: start;
@@ -627,14 +625,17 @@ header
 }
 @media (max-width: 991px) {
   .image {
-    width: 100%;
+    width: 200px;
+    height: 200px;
+    position: relative;
   }
 }
 
 .img {
   aspect-ratio: 1;
   object-position: center;
-  width: 100%;
+  width: 200px;
+  height: 200px;
 }
 @media (max-width: 991px) {
   .img {
@@ -706,6 +707,7 @@ header
   }
 }
 
+/* Contact */
 .contact{
   display: flex;
   width: 100%;
@@ -810,6 +812,6 @@ header
 }
 
 .btn-social{
-  font-size: 24px;
+  font-size: 30px;
   color: var(--light, #FFFFFF);
 }
