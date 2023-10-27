@@ -7,7 +7,7 @@
       'Feature 1': ['assets/images/Navigation.svg', 'Navigation', 'Navigate cyclist in need of help'],
       'Feature 2': ['assets/images/Request Help.svg', 'Request Help and Rescue', 'Get assistance by requesting help and rescue other cyclist in need'],
       'Feature 3': ['assets/images/Rescue Results.svg', 'Rescue Results', 'View the outcome of rescue and have a successful rescue'],
-      'Feature 4': ['assets/images/Ride History.svg', 'Ride History', 'View the outcome of rescue and have a successful rescue'],
+      'Feature 4': ['assets/images/Ride History.svg', 'Ride History', 'Look back the past successful rescues and request of help'],
       'Feature 5': ['assets/images/Hazardous.svg', 'Hazardous Lane Markers', 'Warn other cyclists to have an advance sign on the road'],
       'Feature 6': ['assets/images/Bike Tracker.svg', 'Bike Tracker', 'Track your bike with the partnership of SinoTrack to prevent lost'],
       'Feature 7': ['assets/images/Emergency Call.svg', 'Emergency Call', 'Quickly contact emergency hotlines, family, and friends when emergency occurs'],
