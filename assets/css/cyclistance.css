@@ -273,6 +273,53 @@ button.main-button:hover {
   
 }
 
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  color: #333;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 475px) {
+  .navbar .navbar-nav li a {
+    font-size: 5vw!important;
+  }
+  .navbar{
+    padding: 0!important;
+  }
+  .logo {
+    width: 100%;
+    font-size: 7vw!important;
+    padding-top: 20px!important;
+  }
+
+  .logo img{
+    height: auto!important;
+    width: 50px!important;
+  }
+
+  .navbar-toggler{
+    font-size: 5vw!important;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding-top: 20px!important;
+  }
+
+  .navbar-light .navbar-collapse {
+    border-top: 1px solid #DDDDDD;
+  }
+  
+  .navbar-light .navbar-nav .nav-link::before {
+    top: -5px;
+    border: 5px solid;
+    border-color: #fff transparent transparent transparent;
+  }
+}
+
+/* Homepage */
 .home {
   height: 100vh;
   min-height: 793px;
@@ -318,198 +365,76 @@ button.main-button:hover {
 
 }
 
-.home a img{
+/* .home a img{
   width: 200px;
   height: 60px;
   margin-top: 30px;
-}
+} */
 
 .textFit {
   font-size: 4vw!important;
 }
 
-@media (max-width: 1100px) {
-  .left-text {
-    bottom: -3rem;
-  }
-
-  .textFit {
-    font-size: 5.7vw!important;
-    bottom: -7rem;
-  }
+.download-button {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 30px;
+  width: 200px;
+  height: 60px;
 }
 
-@media (max-width: 1080px) {
+.download-button:hover {
+  background-color: var(--secondary);
+}
+
+/* Media queries for different devices */
+
+@media (max-width: 475px) {
+  .home{
+    background-size: 100%;
+    margin-top: 0%;
+  }
+  .left-text{
+    top: 39rem;
+    width: 100%;
+    text-align: center!important;
+  }
+
   .textFit {
-    font-size: 5.7vw!important;
+    font-size: 7vw!important;
     height: auto!important;
-    bottom: -7rem;
+    top: 7rem;
+    text-align: center!important;
+    width: auto!important;
   }
 
   .pFit {
     width: auto!important;
     height: auto!important;
   }
-}
 
-@media (max-width: 1000px) {
-  .left-text {
-    bottom: -1rem;
-  }
-
-  .textFit {
-    font-size: 3.5vw!important;
-    bottom: -5rem;
-  }
-}
-
-@media (max-width: 800px) {
-  .aboutImg {
-    width: 20rem!important;
-  }
-}
-
-@media (max-width: 520px) {
-  .textFit {
-    font-size: 5.7vw!important;
-    bottom: -7rem;
-  }
-
-  .about {
-    padding-top: 0;
-    margin-top: 0;
-  }
-}
-
-@media (max-width: 1420px) {
-  .home .home-text {
-    width: 70%;
-    margin-left: 5%;
-  }
-
-  .textFit {
-    font-size: 5.7vw!important;
-    bottom: -7rem;
-}
-}
-
-@media (max-width: 1320px) {
-  .home .home-text .left-text {
-    margin-top: 50%;
-  }
-  .home .home-text {
+  .download-button {
     width: 50%;
-    margin-left: 5%;
-  }
-
-  .navbar-light .navbar-collapse {
-    margin-top: 15px;
-    border-top: 1px solid #DDDDDD;
-}
-
-  .navbar-light .navbar-nav .nav-link::before {
-    top: -5px;
-    border: 5px solid;
-    border-color: #fff transparent transparent transparent;
-  }
-
-  .textFit {
-    font-size: 5.7vw!important;
-    bottom: -7rem;
+    height: 60px;
+    position: center!important;
   }
 }
 
 
-
-@media (max-width: 1140px) {
-  .home {
-    height: auto;
-  }
-  .home .home-text {       
-    width: 92%;
-    padding-top: 793px;
-  }
-  .home .home-text .left-text {
-    margin-top: 5%;
-    transform: none !important;
-  }
-
-  .sticky-top.navbar-light {
-    position: fixed;
-    background: #FFFFFF;
-}
-
-  .navbar-light .navbar-collapse {
-    margin-top: 15px;
-    border-top: 1px solid #FFFFFF;
-}
-
-  .navbar-light .navbar-nav .nav-link::before {
-    top: -5px;
-    border: 5px solid;
-    border-color: #FFFFFF transparent transparent transparent;
-  }
-
-  .textFit {
-    font-size: 5.7vw!important;
-    bottom: -7rem;
-  }
-}
-@media (max-width: 810px) {
-  .home {
-    background-size: contain;
-  }
-
-  .home .home-text {
-    padding-top: 100%;
-    margin-left: 0;
-  }
-    
-  .container-fluid .col-md-12 {
-    margin-right: 0px;
-    padding-right: 0px;
-  }
-
-  .navbar-light .navbar-collapse {
-    margin-top: 15px;
-    border-top: 1px solid #DDDDDD;
-}
-  
-    .navbar-light .navbar-nav .nav-link::before {
-      top: -5px;
-      border: 5px solid;
-      border-color: #fff transparent transparent transparent;
-    }
-
-    .textFit {
-      font-size: 5.7vw!important;
-      bottom: -7rem;
-    }
-}
-
-@media (max-width: 660px){
-  .left-text{
-    position: relative;
-    bottom: -7rem;
-  }
-
-  .features-content {
-    position: relative;
-    bottom: -5rem;
-  }
-  .textFit {
-    font-size: 5.7vw!important;
-    bottom: -7rem;
-  }
-}
 
 /* App Features */
 .features-content {
   margin-top: 100px;
   margin-bottom: 100px;
-  background-image: url(../images/Features\ BG.svg);
+  background-image: url(../images/App\ Feature\ BG.svg);
   background-position: left;
-  background-size: 48%;
+  background-size: 10%;
   background-repeat: no-repeat;
   margin-left: 70px;
 }
